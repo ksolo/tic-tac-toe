@@ -98,7 +98,7 @@ bool player_wins(PlayerToken token, std::vector<PlayerToken>& tokens) {
 }
 
 bool game_over(std::vector<PlayerToken>& tokens, int turn_count) {
-    int max_turns = 8;
+    int max_turns = 9;
     return (
         player_wins(PlayerToken::X, tokens) ||
         player_wins(PlayerToken::Y, tokens) ||
